@@ -1,0 +1,667 @@
+Country,Date,Travel Policy
+Australia,2020-01-01,0.0
+Australia,2020-02-01,3.0
+Australia,2020-03-01,3.0
+Australia,2020-04-01,4.0
+Australia,2020-05-01,4.0
+Australia,2020-06-01,4.0
+Australia,2020-07-01,4.0
+Australia,2020-08-01,4.0
+Australia,2020-09-01,4.0
+Australia,2020-10-01,4.0
+Australia,2020-11-01,4.0
+Australia,2020-12-01,4.0
+Australia,2021-01-01,4.0
+Australia,2021-02-01,4.0
+Australia,2021-03-01,4.0
+Australia,2021-04-01,4.0
+Australia,2021-05-01,4.0
+Australia,2021-06-01,4.0
+Australia,2021-07-01,4.0
+Australia,2021-08-01,4.0
+Australia,2021-09-01,4.0
+Australia,2021-10-01,4.0
+Australia,2021-11-01,2.0
+Australia,2021-12-01,2.0
+Australia,2022-01-01,2.0
+Australia,2022-02-01,2.0
+Australia,2022-03-01,1.0
+Australia,2022-04-01,1.0
+Australia,2022-05-01,1.0
+Australia,2022-06-01,1.0
+Australia,2022-07-01,0.0
+Australia,2022-08-01,0.0
+Australia,2022-09-01,0.0
+Australia,2022-10-01,0.0
+Australia,2022-11-01,0.0
+Australia,2022-12-01,0.0
+Austria,2020-01-01,0.0
+Austria,2020-02-01,0.0
+Austria,2020-03-01,3.0
+Austria,2020-04-01,3.0
+Austria,2020-05-01,3.0
+Austria,2020-06-01,3.0
+Austria,2020-07-01,3.0
+Austria,2020-08-01,3.0
+Austria,2020-09-01,3.0
+Austria,2020-10-01,3.0
+Austria,2020-11-01,3.0
+Austria,2020-12-01,3.0
+Austria,2021-01-01,3.0
+Austria,2021-02-01,3.0
+Austria,2021-03-01,3.0
+Austria,2021-04-01,3.0
+Austria,2021-05-01,3.0
+Austria,2021-06-01,3.0
+Austria,2021-07-01,3.0
+Austria,2021-08-01,3.0
+Austria,2021-09-01,3.0
+Austria,2021-10-01,3.0
+Austria,2021-11-01,2.0
+Austria,2021-12-01,3.0
+Austria,2022-01-01,3.0
+Austria,2022-02-01,1.0
+Austria,2022-03-01,1.0
+Austria,2022-04-01,1.0
+Austria,2022-05-01,0.0
+Austria,2022-06-01,0.0
+Austria,2022-07-01,0.0
+Austria,2022-08-01,0.0
+Austria,2022-09-01,0.0
+Austria,2022-10-01,0.0
+Austria,2022-11-01,0.0
+Austria,2022-12-01,0.0
+Cambodia,2020-01-01,0.0
+Cambodia,2020-02-01,0.0
+Cambodia,2020-03-01,3.0
+Cambodia,2020-04-01,2.0
+Cambodia,2020-05-01,2.0
+Cambodia,2020-06-01,2.0
+Cambodia,2020-07-01,2.0
+Cambodia,2020-08-01,3.0
+Cambodia,2020-09-01,2.0
+Cambodia,2020-10-01,2.0
+Cambodia,2020-11-01,2.0
+Cambodia,2020-12-01,2.0
+Cambodia,2021-01-01,2.0
+Cambodia,2021-02-01,2.0
+Cambodia,2021-03-01,2.0
+Cambodia,2021-04-01,2.0
+Cambodia,2021-05-01,3.0
+Cambodia,2021-06-01,3.0
+Cambodia,2021-07-01,3.0
+Cambodia,2021-08-01,2.0
+Cambodia,2021-09-01,2.0
+Cambodia,2021-10-01,2.0
+Cambodia,2021-11-01,2.0
+Cambodia,2021-12-01,1.0
+Cambodia,2022-01-01,1.0
+Cambodia,2022-02-01,1.0
+Cambodia,2022-03-01,1.0
+Cambodia,2022-04-01,1.0
+Cambodia,2022-05-01,1.0
+Cambodia,2022-06-01,1.0
+Cambodia,2022-07-01,1.0
+Cambodia,2022-08-01,1.0
+Cambodia,2022-09-01,1.0
+Cambodia,2022-10-01,0.0
+Cambodia,2022-11-01,0.0
+Cambodia,2022-12-01,0.0
+Canada,2020-01-01,0.0
+Canada,2020-02-01,1.0
+Canada,2020-03-01,1.0
+Canada,2020-04-01,4.0
+Canada,2020-05-01,4.0
+Canada,2020-06-01,4.0
+Canada,2020-07-01,4.0
+Canada,2020-08-01,4.0
+Canada,2020-09-01,4.0
+Canada,2020-10-01,4.0
+Canada,2020-11-01,4.0
+Canada,2020-12-01,4.0
+Canada,2021-01-01,4.0
+Canada,2021-02-01,4.0
+Canada,2021-03-01,4.0
+Canada,2021-04-01,4.0
+Canada,2021-05-01,4.0
+Canada,2021-06-01,4.0
+Canada,2021-07-01,4.0
+Canada,2021-08-01,3.0
+Canada,2021-09-01,1.0
+Canada,2021-10-01,1.0
+Canada,2021-11-01,1.0
+Canada,2021-12-01,3.0
+Canada,2022-01-01,2.0
+Canada,2022-02-01,2.0
+Canada,2022-03-01,1.0
+Canada,2022-04-01,1.0
+Canada,2022-05-01,1.0
+Canada,2022-06-01,1.0
+Canada,2022-07-01,1.0
+Canada,2022-08-01,1.0
+Canada,2022-09-01,1.0
+Canada,2022-10-01,0.0
+Canada,2022-11-01,0.0
+Canada,2022-12-01,0.0
+Chile,2020-01-01,0.0
+Chile,2020-02-01,0.0
+Chile,2020-03-01,0.0
+Chile,2020-04-01,4.0
+Chile,2020-05-01,4.0
+Chile,2020-06-01,4.0
+Chile,2020-07-01,4.0
+Chile,2020-08-01,4.0
+Chile,2020-09-01,4.0
+Chile,2020-10-01,4.0
+Chile,2020-11-01,4.0
+Chile,2020-12-01,1.0
+Chile,2021-01-01,3.0
+Chile,2021-02-01,3.0
+Chile,2021-03-01,3.0
+Chile,2021-04-01,4.0
+Chile,2021-05-01,4.0
+Chile,2021-06-01,4.0
+Chile,2021-07-01,4.0
+Chile,2021-08-01,2.0
+Chile,2021-09-01,2.0
+Chile,2021-10-01,2.0
+Chile,2021-11-01,1.0
+Chile,2021-12-01,1.0
+Chile,2022-01-01,1.0
+Chile,2022-02-01,1.0
+Chile,2022-03-01,1.0
+Chile,2022-04-01,1.0
+Chile,2022-05-01,1.0
+Chile,2022-06-01,1.0
+Chile,2022-07-01,1.0
+Chile,2022-08-01,1.0
+Chile,2022-09-01,1.0
+Chile,2022-10-01,1.0
+Chile,2022-11-01,1.0
+Chile,2022-12-01,1.0
+Chile,2023-05-01,0.0
+Chinese Taipei,2020-01-01,1.0
+Chinese Taipei,2020-02-01,3.0
+Chinese Taipei,2020-03-01,3.0
+Chinese Taipei,2020-04-01,4.0
+Chinese Taipei,2020-05-01,4.0
+Chinese Taipei,2020-06-01,4.0
+Chinese Taipei,2020-07-01,3.0
+Chinese Taipei,2020-08-01,3.0
+Chinese Taipei,2020-09-01,3.0
+Chinese Taipei,2020-10-01,3.0
+Chinese Taipei,2020-11-01,3.0
+Chinese Taipei,2020-12-01,3.0
+Chinese Taipei,2021-01-01,3.0
+Chinese Taipei,2021-02-01,3.0
+Chinese Taipei,2021-03-01,3.0
+Chinese Taipei,2021-04-01,3.0
+Chinese Taipei,2021-05-01,3.0
+Chinese Taipei,2021-06-01,4.0
+Chinese Taipei,2021-07-01,4.0
+Chinese Taipei,2021-08-01,4.0
+Chinese Taipei,2021-09-01,2.0
+Chinese Taipei,2021-10-01,2.0
+Chinese Taipei,2021-11-01,2.0
+Chinese Taipei,2021-12-01,2.0
+Chinese Taipei,2022-01-01,2.0
+Chinese Taipei,2022-02-01,2.0
+Chinese Taipei,2022-03-01,3.0
+Chinese Taipei,2022-04-01,3.0
+Chinese Taipei,2022-05-01,3.0
+Chinese Taipei,2022-06-01,3.0
+Chinese Taipei,2022-07-01,3.0
+Chinese Taipei,2022-08-01,3.0
+Chinese Taipei,2022-09-01,2.0
+Chinese Taipei,2022-10-01,1.0
+Chinese Taipei,2022-11-01,1.0
+Chinese Taipei,2022-12-01,1.0
+Chinese Taipei,2023-02-01,0.0
+Czech,2020-01-01,0.0
+Czech,2020-02-01,3.0
+Czech,2020-03-01,4.0
+Czech,2020-04-01,2.0
+Czech,2020-05-01,2.0
+Czech,2020-06-01,2.0
+Czech,2020-07-01,3.0
+Czech,2020-08-01,3.0
+Czech,2020-09-01,3.0
+Czech,2020-10-01,3.0
+Czech,2020-11-01,3.0
+Czech,2020-12-01,3.0
+Czech,2021-01-01,3.0
+Czech,2021-02-01,3.0
+Czech,2021-03-01,3.0
+Czech,2021-04-01,3.0
+Czech,2021-05-01,3.0
+Czech,2021-06-01,3.0
+Czech,2021-07-01,3.0
+Czech,2021-08-01,2.0
+Czech,2021-09-01,2.0
+Czech,2021-10-01,3.0
+Czech,2021-11-01,1.0
+Czech,2021-12-01,1.0
+Czech,2022-01-01,1.0
+Czech,2022-02-01,1.0
+Czech,2022-03-01,1.0
+Czech,2022-04-01,0.0
+Czech,2022-05-01,0.0
+Czech,2022-06-01,0.0
+Czech,2022-07-01,0.0
+Czech,2022-08-01,0.0
+Czech,2022-09-01,0.0
+Czech,2022-10-01,0.0
+Czech,2022-11-01,0.0
+Czech,2022-12-01,0.0
+Hong Kong SAR,2020-01-01,1.0
+Hong Kong SAR,2020-02-01,3.0
+Hong Kong SAR,2020-03-01,3.0
+Hong Kong SAR,2020-04-01,4.0
+Hong Kong SAR,2020-05-01,4.0
+Hong Kong SAR,2020-06-01,4.0
+Hong Kong SAR,2020-07-01,4.0
+Hong Kong SAR,2020-08-01,4.0
+Hong Kong SAR,2020-09-01,4.0
+Hong Kong SAR,2020-10-01,4.0
+Hong Kong SAR,2020-11-01,2.0
+Hong Kong SAR,2020-12-01,3.0
+Hong Kong SAR,2021-01-01,3.0
+Hong Kong SAR,2021-02-01,3.0
+Hong Kong SAR,2021-03-01,3.0
+Hong Kong SAR,2021-04-01,3.0
+Hong Kong SAR,2021-05-01,3.0
+Hong Kong SAR,2021-06-01,3.0
+Hong Kong SAR,2021-07-01,3.0
+Hong Kong SAR,2021-08-01,2.0
+Hong Kong SAR,2021-09-01,2.0
+Hong Kong SAR,2021-10-01,2.0
+Hong Kong SAR,2021-11-01,2.0
+Hong Kong SAR,2021-12-01,3.0
+Hong Kong SAR,2022-01-01,3.0
+Hong Kong SAR,2022-02-01,3.0
+Hong Kong SAR,2022-03-01,3.0
+Hong Kong SAR,2022-04-01,3.0
+Hong Kong SAR,2022-05-01,2.0
+Hong Kong SAR,2022-06-01,2.0
+Hong Kong SAR,2022-07-01,2.0
+Hong Kong SAR,2022-08-01,2.0
+Hong Kong SAR,2022-09-01,2.0
+Hong Kong SAR,2022-10-01,2.0
+Hong Kong SAR,2022-11-01,2.0
+Hong Kong SAR,2022-12-01,2.0
+Hong Kong SAR,2023-02-01,0.0
+Indonesia,2020-01-01,0.0
+Indonesia,2020-02-01,3.0
+Indonesia,2020-03-01,3.0
+Indonesia,2020-04-01,4.0
+Indonesia,2020-05-01,4.0
+Indonesia,2020-06-01,4.0
+Indonesia,2020-07-01,4.0
+Indonesia,2020-08-01,3.0
+Indonesia,2020-09-01,3.0
+Indonesia,2020-10-01,3.0
+Indonesia,2020-11-01,3.0
+Indonesia,2020-12-01,3.0
+Indonesia,2021-01-01,3.0
+Indonesia,2021-02-01,3.0
+Indonesia,2021-03-01,3.0
+Indonesia,2021-04-01,3.0
+Indonesia,2021-05-01,3.0
+Indonesia,2021-06-01,3.0
+Indonesia,2021-07-01,2.0
+Indonesia,2021-08-01,2.0
+Indonesia,2021-09-01,2.0
+Indonesia,2021-10-01,2.0
+Indonesia,2021-11-01,2.0
+Indonesia,2021-12-01,2.0
+Indonesia,2022-01-01,2.0
+Indonesia,2022-02-01,2.0
+Indonesia,2022-03-01,2.0
+Indonesia,2022-04-01,1.0
+Indonesia,2022-05-01,1.0
+Indonesia,2022-06-01,1.0
+Indonesia,2022-07-01,1.0
+Indonesia,2022-08-01,1.0
+Indonesia,2022-09-01,1.0
+Indonesia,2022-10-01,1.0
+Indonesia,2022-11-01,1.0
+Indonesia,2022-12-01,1.0
+Indonesia,2023-06-01,0.0
+Japan,2020-01-01,1.0
+Japan,2020-02-01,3.0
+Japan,2020-03-01,2.0
+Japan,2020-04-01,3.0
+Japan,2020-05-01,3.0
+Japan,2020-06-01,3.0
+Japan,2020-07-01,3.0
+Japan,2020-08-01,3.0
+Japan,2020-09-01,3.0
+Japan,2020-10-01,3.0
+Japan,2020-11-01,3.0
+Japan,2020-12-01,3.0
+Japan,2021-01-01,4.0
+Japan,2021-02-01,4.0
+Japan,2021-03-01,4.0
+Japan,2021-04-01,4.0
+Japan,2021-05-01,4.0
+Japan,2021-06-01,4.0
+Japan,2021-07-01,4.0
+Japan,2021-08-01,4.0
+Japan,2021-09-01,4.0
+Japan,2021-10-01,4.0
+Japan,2021-11-01,4.0
+Japan,2021-12-01,4.0
+Japan,2022-01-01,4.0
+Japan,2022-02-01,4.0
+Japan,2022-03-01,4.0
+Japan,2022-04-01,4.0
+Japan,2022-05-01,4.0
+Japan,2022-06-01,1.0
+Japan,2022-07-01,1.0
+Japan,2022-08-01,1.0
+Japan,2022-09-01,1.0
+Japan,2022-10-01,1.0
+Japan,2022-11-01,1.0
+Japan,2022-12-01,1.0
+Japan,2023-05-01,0.0
+Korea (ROK),2020-01-01,0.0
+Korea (ROK),2020-02-01,3.0
+Korea (ROK),2020-03-01,3.0
+Korea (ROK),2020-04-01,3.0
+Korea (ROK),2020-05-01,3.0
+Korea (ROK),2020-06-01,3.0
+Korea (ROK),2020-07-01,3.0
+Korea (ROK),2020-08-01,3.0
+Korea (ROK),2020-09-01,2.0
+Korea (ROK),2020-10-01,2.0
+Korea (ROK),2020-11-01,2.0
+Korea (ROK),2020-12-01,2.0
+Korea (ROK),2021-01-01,3.0
+Korea (ROK),2021-02-01,3.0
+Korea (ROK),2021-03-01,3.0
+Korea (ROK),2021-04-01,3.0
+Korea (ROK),2021-05-01,2.0
+Korea (ROK),2021-06-01,2.0
+Korea (ROK),2021-07-01,2.0
+Korea (ROK),2021-08-01,2.0
+Korea (ROK),2021-09-01,2.0
+Korea (ROK),2021-10-01,2.0
+Korea (ROK),2021-11-01,2.0
+Korea (ROK),2021-12-01,3.0
+Korea (ROK),2022-01-01,3.0
+Korea (ROK),2022-02-01,2.0
+Korea (ROK),2022-03-01,2.0
+Korea (ROK),2022-04-01,1.0
+Korea (ROK),2022-05-01,1.0
+Korea (ROK),2022-06-01,1.0
+Korea (ROK),2022-07-01,1.0
+Korea (ROK),2022-08-01,1.0
+Korea (ROK),2022-09-01,1.0
+Korea (ROK),2022-10-01,0.0
+Korea (ROK),2022-11-01,0.0
+Korea (ROK),2022-12-01,0.0
+"Macao, China",2020-01-01,1.0
+"Macao, China",2020-02-01,1.0
+"Macao, China",2020-03-01,2.0
+"Macao, China",2020-04-01,4.0
+"Macao, China",2020-05-01,3.0
+"Macao, China",2020-06-01,3.0
+"Macao, China",2020-07-01,3.0
+"Macao, China",2020-08-01,3.0
+"Macao, China",2020-09-01,3.0
+"Macao, China",2020-10-01,3.0
+"Macao, China",2020-11-01,3.0
+"Macao, China",2020-12-01,3.0
+"Macao, China",2021-01-01,3.0
+"Macao, China",2021-02-01,3.0
+"Macao, China",2021-03-01,3.0
+"Macao, China",2021-04-01,3.0
+"Macao, China",2021-05-01,3.0
+"Macao, China",2021-06-01,3.0
+"Macao, China",2021-07-01,2.0
+"Macao, China",2021-08-01,2.0
+"Macao, China",2021-09-01,2.0
+"Macao, China",2021-10-01,3.0
+"Macao, China",2021-11-01,3.0
+"Macao, China",2021-12-01,3.0
+"Macao, China",2022-01-01,3.0
+"Macao, China",2022-02-01,3.0
+"Macao, China",2022-03-01,3.0
+"Macao, China",2022-04-01,3.0
+"Macao, China",2022-05-01,3.0
+"Macao, China",2022-06-01,3.0
+"Macao, China",2022-07-01,3.0
+"Macao, China",2022-08-01,3.0
+"Macao, China",2022-09-01,3.0
+"Macao, China",2022-10-01,3.0
+"Macao, China",2022-11-01,1.0
+"Macao, China",2022-12-01,1.0
+"Macao, China",2023-02-01,0.0
+Maldives,2020-01-01,0.0
+Maldives,2020-03-01,4.0
+Maldives,2020-05-01,3.0
+Maldives,2020-07-01,1.0
+Maldives,2021-05-01,3.0
+Maldives,2021-07-01,1.0
+Maldives,2021-11-01,3.0
+Maldives,2022-01-01,1.0
+Maldives,2022-03-01,0.0
+Mexico,2020-01-01,0.0
+Mexico,2020-02-01,0.0
+Mexico,2020-03-01,1.0
+Mexico,2020-04-01,3.0
+Mexico,2020-05-01,3.0
+Mexico,2020-06-01,3.0
+Mexico,2020-07-01,3.0
+Mexico,2020-08-01,3.0
+Mexico,2020-09-01,3.0
+Mexico,2020-10-01,1.0
+Mexico,2020-11-01,1.0
+Mexico,2020-12-01,1.0
+Mexico,2021-01-01,1.0
+Mexico,2021-02-01,1.0
+Mexico,2021-03-01,1.0
+Mexico,2021-04-01,1.0
+Mexico,2021-05-01,1.0
+Mexico,2021-06-01,1.0
+Mexico,2021-07-01,1.0
+Mexico,2021-08-01,1.0
+Mexico,2021-09-01,1.0
+Mexico,2021-10-01,1.0
+Mexico,2021-11-01,1.0
+Mexico,2021-12-01,1.0
+Mexico,2022-01-01,1.0
+Mexico,2022-02-01,1.0
+Mexico,2022-03-01,1.0
+Mexico,2022-04-01,1.0
+Mexico,2022-05-01,1.0
+Mexico,2022-06-01,1.0
+Mexico,2022-07-01,1.0
+Mexico,2022-08-01,1.0
+Mexico,2022-09-01,1.0
+Mexico,2022-10-01,1.0
+Mexico,2022-11-01,1.0
+Mexico,2022-12-01,1.0
+Mexico,2023-01-01,0.0
+New Zealand,2020-01-01,0.0
+New Zealand,2020-02-01,3.0
+New Zealand,2020-03-01,3.0
+New Zealand,2020-04-01,4.0
+New Zealand,2020-05-01,4.0
+New Zealand,2020-06-01,4.0
+New Zealand,2020-07-01,4.0
+New Zealand,2020-08-01,4.0
+New Zealand,2020-09-01,4.0
+New Zealand,2020-10-01,4.0
+New Zealand,2020-11-01,4.0
+New Zealand,2020-12-01,4.0
+New Zealand,2021-01-01,4.0
+New Zealand,2021-02-01,4.0
+New Zealand,2021-03-01,4.0
+New Zealand,2021-04-01,4.0
+New Zealand,2021-05-01,4.0
+New Zealand,2021-06-01,4.0
+New Zealand,2021-07-01,4.0
+New Zealand,2021-08-01,4.0
+New Zealand,2021-09-01,4.0
+New Zealand,2021-10-01,4.0
+New Zealand,2021-11-01,4.0
+New Zealand,2021-12-01,4.0
+New Zealand,2022-01-01,4.0
+New Zealand,2022-02-01,4.0
+New Zealand,2022-03-01,3.0
+New Zealand,2022-04-01,1.0
+New Zealand,2022-05-01,1.0
+New Zealand,2022-06-01,1.0
+New Zealand,2022-07-01,1.0
+New Zealand,2022-08-01,1.0
+New Zealand,2022-09-01,0.0
+New Zealand,2022-10-01,0.0
+New Zealand,2022-11-01,0.0
+New Zealand,2022-12-01,0.0
+Singapore,2020-01-01,1.0
+Singapore,2020-02-01,3.0
+Singapore,2020-03-01,3.0
+Singapore,2020-04-01,3.0
+Singapore,2020-05-01,3.0
+Singapore,2020-06-01,3.0
+Singapore,2020-07-01,3.0
+Singapore,2020-08-01,3.0
+Singapore,2020-09-01,3.0
+Singapore,2020-10-01,3.0
+Singapore,2020-11-01,3.0
+Singapore,2020-12-01,3.0
+Singapore,2021-01-01,3.0
+Singapore,2021-02-01,3.0
+Singapore,2021-03-01,3.0
+Singapore,2021-04-01,3.0
+Singapore,2021-05-01,3.0
+Singapore,2021-06-01,3.0
+Singapore,2021-07-01,3.0
+Singapore,2021-08-01,1.0
+Singapore,2021-09-01,1.0
+Singapore,2021-10-01,1.0
+Singapore,2021-11-01,1.0
+Singapore,2021-12-01,1.0
+Singapore,2022-01-01,1.0
+Singapore,2022-02-01,1.0
+Singapore,2022-03-01,1.0
+Singapore,2022-04-01,1.0
+Singapore,2022-05-01,1.0
+Singapore,2022-06-01,1.0
+Singapore,2022-07-01,1.0
+Singapore,2022-08-01,1.0
+Singapore,2022-09-01,1.0
+Singapore,2022-10-01,1.0
+Singapore,2022-11-01,1.0
+Singapore,2022-12-01,1.0
+Singapore,2023-02-01,0.0
+Thailand,2020-01-01,0.0
+Thailand,2020-02-01,0.0
+Thailand,2020-03-01,2.0
+Thailand,2020-04-01,4.0
+Thailand,2020-05-01,4.0
+Thailand,2020-06-01,4.0
+Thailand,2020-07-01,3.0
+Thailand,2020-08-01,3.0
+Thailand,2020-09-01,3.0
+Thailand,2020-10-01,3.0
+Thailand,2020-11-01,3.0
+Thailand,2020-12-01,2.0
+Thailand,2021-01-01,2.0
+Thailand,2021-02-01,2.0
+Thailand,2021-03-01,2.0
+Thailand,2021-04-01,2.0
+Thailand,2021-05-01,3.0
+Thailand,2021-06-01,3.0
+Thailand,2021-07-01,3.0
+Thailand,2021-08-01,3.0
+Thailand,2021-09-01,2.0
+Thailand,2021-10-01,2.0
+Thailand,2021-11-01,3.0
+Thailand,2021-12-01,3.0
+Thailand,2022-01-01,2.0
+Thailand,2022-02-01,2.0
+Thailand,2022-03-01,2.0
+Thailand,2022-04-01,1.0
+Thailand,2022-05-01,1.0
+Thailand,2022-06-01,1.0
+Thailand,2022-07-01,1.0
+Thailand,2022-08-01,1.0
+Thailand,2022-09-01,1.0
+Thailand,2022-10-01,0.0
+Thailand,2022-11-01,0.0
+Thailand,2022-12-01,0.0
+Turkey,2020-01-01,0.0
+Turkey,2020-02-01,3.0
+Turkey,2020-03-01,3.0
+Turkey,2020-04-01,4.0
+Turkey,2020-05-01,4.0
+Turkey,2020-06-01,3.0
+Turkey,2020-07-01,3.0
+Turkey,2020-08-01,1.0
+Turkey,2020-09-01,1.0
+Turkey,2020-10-01,1.0
+Turkey,2020-11-01,1.0
+Turkey,2020-12-01,1.0
+Turkey,2021-01-01,3.0
+Turkey,2021-02-01,3.0
+Turkey,2021-03-01,3.0
+Turkey,2021-04-01,3.0
+Turkey,2021-05-01,3.0
+Turkey,2021-06-01,2.0
+Turkey,2021-07-01,3.0
+Turkey,2021-08-01,3.0
+Turkey,2021-09-01,3.0
+Turkey,2021-10-01,3.0
+Turkey,2021-11-01,3.0
+Turkey,2021-12-01,3.0
+Turkey,2022-01-01,1.0
+Turkey,2022-02-01,1.0
+Turkey,2022-03-01,1.0
+Turkey,2022-04-01,1.0
+Turkey,2022-05-01,1.0
+Turkey,2022-06-01,0.0
+Turkey,2022-07-01,0.0
+Turkey,2022-08-01,0.0
+Turkey,2022-09-01,0.0
+Turkey,2022-10-01,0.0
+Turkey,2022-11-01,0.0
+Turkey,2022-12-01,0.0
+USA,2020-01-01,0.0
+USA,2020-02-01,3.0
+USA,2020-03-01,3.0
+USA,2020-04-01,3.0
+USA,2020-05-01,3.0
+USA,2020-06-01,3.0
+USA,2020-07-01,3.0
+USA,2020-08-01,3.0
+USA,2020-09-01,3.0
+USA,2020-10-01,3.0
+USA,2020-11-01,3.0
+USA,2020-12-01,3.0
+USA,2021-01-01,3.0
+USA,2021-02-01,3.0
+USA,2021-03-01,3.0
+USA,2021-04-01,3.0
+USA,2021-05-01,3.0
+USA,2021-06-01,3.0
+USA,2021-07-01,3.0
+USA,2021-08-01,3.0
+USA,2021-09-01,3.0
+USA,2021-10-01,3.0
+USA,2021-11-01,1.0
+USA,2021-12-01,3.0
+USA,2022-01-01,1.0
+USA,2022-02-01,1.0
+USA,2022-03-01,1.0
+USA,2022-04-01,1.0
+USA,2022-05-01,1.0
+USA,2022-06-01,1.0
+USA,2022-07-01,1.0
+USA,2022-08-01,1.0
+USA,2022-09-01,1.0
+USA,2022-10-01,1.0
+USA,2022-11-01,1.0
+USA,2022-12-01,1.0
+USA,2023-02-01,0.0
