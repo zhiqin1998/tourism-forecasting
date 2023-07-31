@@ -34,6 +34,8 @@ class ForecastModel(nn.Module):
                               num_layers=num_layers, batch_first=True, dropout=dropout if num_layers > 1 else 0)
         else:
             raise NotImplementedError
+        # by default pytorch already initialize rnn weights with xavier and linear weights with kaiming
+        # self.init_weights()
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(hidden_size, output_size)
         self.conditional_labels = conditional_labels
@@ -46,6 +48,14 @@ class ForecastModel(nn.Module):
                 embedding_weights = PCA(n_components=self.hidden_size).fit_transform(
                     [emb_dict[c] for c in self.conditional_labels])
                 self.cond_emb = nn.Embedding.from_pretrained(torch.from_numpy(embedding_weights).float())
+
+    def init_weights(self):
+        for layer in range(self.num_layers):
+            for weight in self.rnn._all_weights[layer]:
+                if "weight" in weight:
+                    nn.init.xavier_uniform_(getattr(self.rnn, weight))
+                if "bias" in weight:
+                    nn.init.zeros_(getattr(self.rnn, weight))
 
     def get_embeddings(self, cond_labels):
         embedding = self.cond_emb(
@@ -66,7 +76,7 @@ class ForecastModel(nn.Module):
 
 
 class TimeSeriesDataset(Dataset):
-    def __init__(self, x_dfs, y_arr, cond_col='Country'):  # , state_shape, initial_states=None):
+    def __init__(self, x_dfs, y_arr, mases=None, cond_col='Country'):  # , state_shape, initial_states=None):
         super(TimeSeriesDataset, self).__init__()
         assert all(cond_col in x_df.columns for x_df in x_dfs)
         assert len(x_dfs) == len(y_arr)
@@ -75,6 +85,7 @@ class TimeSeriesDataset(Dataset):
         self.cond_col = cond_col
         # self.state_shape = state_shape
         self.feat_col = [x for x in x_dfs[0].columns if x != cond_col]
+        self.mases = mases
         # if initial_states is None:
         #     initial_states = {}
         # self.initial_states = initial_states
@@ -106,7 +117,10 @@ class TimeSeriesDataset(Dataset):
         # initial_state = self.get_state()
         cond_label = x_row[self.cond_col].unique()[0]
         x_row = x_row[self.feat_col]
-        return cond_label, x_row.to_numpy(), y
+        if self.mases is None:
+            return cond_label, x_row.to_numpy(), y
+        else:
+            return cond_label, x_row.to_numpy(), y, self.mases[idx]
 
 
 def load_data(imputed_dir, candidates, target, seq_len=5, freq='Y', test_size=4, remove_covid=False, reverse=False, country_filter=None,
@@ -300,7 +314,7 @@ def load_data_forecast(imputed_dir, candidates, target, seq_len=5, freq='Y', rev
 
 
 def train_rnn(model, criterion, optimizer, train_dataloader, val_dataloader=None, epochs=50, early_stop_delta=1e-4,
-              early_stop_patience=3, verbose=True, cuda=True, save_best=True):
+              early_stop_patience=3, verbose=True, cuda=True, save_best=True, mase=False):
     if cuda:
         model.cuda()
     best_val_loss = 100000
@@ -312,14 +326,24 @@ def train_rnn(model, criterion, optimizer, train_dataloader, val_dataloader=None
         model.train()
         train_loss = 0.
         st = time.time()
-        for cond_labels, x_batch, y_batch in train_dataloader:
+        for batch in train_dataloader:
+            if mase:
+                cond_labels, x_batch, y_batch, mase_batch = batch
+                mase_batch = mase_batch.float()
+            else:
+                cond_labels, x_batch, y_batch = batch
             x_batch, y_batch = x_batch.float(), y_batch.float()
             init_state = model.get_embeddings(cond_labels)
             if cuda:
                 init_state, x_batch, y_batch = init_state.cuda(), x_batch.cuda(), y_batch.cuda()
+                if mase:
+                    mase_batch = mase_batch.cuda()
             # init_state = init_state.permute(1, 0, 2).contiguous() # switch batch to middle for pytorch
             y_pred = model(x_batch, init_state)
-            loss = criterion(y_pred, y_batch)
+            if mase:
+                loss = criterion(y_pred, y_batch, mase_batch)
+            else:
+                loss = criterion(y_pred, y_batch)
             train_loss += loss.item()
             optimizer.zero_grad()
             loss.backward()
@@ -328,7 +352,7 @@ def train_rnn(model, criterion, optimizer, train_dataloader, val_dataloader=None
         train_losses.append(train_loss)
 
         if val_dataloader is not None:
-            _, val_loss = eval_rnn(model, criterion, val_dataloader, cuda=cuda)
+            _, val_loss = eval_rnn(model, criterion, val_dataloader, cuda=cuda, mase=mase)
             if verbose:
                 print("Epoch %d: train loss %.4f, val loss %.4f, time %.4f" % (
                 epoch, train_loss, val_loss, time.time() - st))
@@ -354,20 +378,33 @@ def train_rnn(model, criterion, optimizer, train_dataloader, val_dataloader=None
 
 
 @torch.no_grad()
-def eval_rnn(model, criterion, dataloader, cuda=True):
+def eval_rnn(model, criterion, dataloader, cuda=True, dropout=False, mase=False):
     val_loss = 0.
     preds = []
     if cuda:
         model.cuda()
     model.eval()
-    for cond_labels, x_batch, y_batch in dataloader:
+    if dropout:
+        model.dropout.train()
+        model.rnn.train()
+    for batch in dataloader:
+        if mase:
+            cond_labels, x_batch, y_batch, mase_batch = batch
+            mase_batch = mase_batch.float()
+        else:
+            cond_labels, x_batch, y_batch = batch
         x_batch, y_batch = x_batch.float(), y_batch.float()
         init_state = model.get_embeddings(cond_labels)
         if cuda:
             init_state, x_batch, y_batch = init_state.cuda(), x_batch.cuda(), y_batch.cuda()
+            if mase:
+                mase_batch = mase_batch.cuda()
         # init_state = init_state.permute(1, 0, 2).contiguous() # switch batch to middle for pytorch
         y_pred = model(x_batch, init_state)
-        loss = criterion(y_pred, y_batch)
+        if mase:
+            loss = criterion(y_pred, y_batch, mase_batch)
+        else:
+            loss = criterion(y_pred, y_batch)
         val_loss += loss.item()
         preds.append(y_pred.detach().cpu().numpy())
     return np.concatenate(preds), val_loss / len(dataloader)

@@ -6,6 +6,7 @@ import gensim.downloader
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import scipy
 import seaborn as sns
 import torch.optim as optim
 
@@ -156,10 +157,60 @@ def get_torch_optimizer(optim_type, model_parameters, lr, **kwargs):
         raise NotImplementedError
 
 
+def mase_loss(output, target, scale):
+    return (nn.functional.l1_loss(output, target, reduction='none') / scale).mean()
+
+
+def mean_absolute_scaled_error(target, output, scale):
+    return np.mean(np.abs(output - target) / scale)
+
+
+def compute_mase_scale(target, m=12, h=12):
+    if isinstance(target, pd.Series):
+        target = target.values
+    sums = []
+    for t in range(m, len(target) - h):
+        sums.append(abs(target[t] - target[t-m]))
+    return np.mean(sums)
+
+
 def get_torch_criterion(criterion_type):
     if criterion_type == 'mse':
         return nn.MSELoss()
     elif criterion_type in ('l1', 'mae'):
         return nn.L1Loss()
+    elif criterion_type == 'mase':
+        return mase_loss
     else:
         raise NotImplementedError
+
+
+def inverse_target(target, seasonal_component, scaler):
+    target = np.asarray(target)
+    if target.ndim == 1:
+        target = np.expand_dims(target, -1)
+    return np.expm1(scaler.inverse_transform(target).flatten() + seasonal_component)
+
+
+def get_seasonal_component(seasonal_res, target_length):
+    if len(seasonal_res.seasonal) >= target_length:
+        return seasonal_res.seasonal.iloc[:target_length]
+    seasonal_component = pd.concat([seasonal_res.seasonal,
+                                    pd.Series(np.resize(seasonal_res.seasonal.values[-12:], target_length - len(seasonal_res.seasonal)))], ignore_index=True)
+    return seasonal_component
+
+
+def winkler_score(lower, upper, actual, alpha=0.2):
+    assert lower.shape == upper.shape == actual.shape
+    width = upper - lower
+    winkler = np.where((lower <= actual) & (actual <= upper), width,
+                       np.where(lower > actual, width + 2 * (lower - actual) / alpha,
+                                width + 2 * (actual - upper) / alpha))
+    return np.mean(winkler)
+
+
+def get_confidence_interval(sample, confidence=0.8):
+    n = len(sample)
+    se = scipy.stats.sem(sample, axis=0)
+    h = se * scipy.stats.t.ppf((1 + confidence) / 2., n-1)
+    return h
