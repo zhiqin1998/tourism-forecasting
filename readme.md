@@ -1,5 +1,5 @@
 # Post-pandemic tourism forecasting with ensemble RNN
-Published in the [Annals of Tourism Research, vol. 116](https://doi.org/10.1016/j.annals.2025.104099)
+Published in the [Annals of Tourism Research, vol. 116, 2025](https://doi.org/10.1016/j.annals.2025.104099)
 
 ## Description
 This repository contains the code and data used for the tourism forecasting competition organised by the School of Hospitality and Tourism Management, University of Surrey. The aim of this tourism forecasting competition is three-fold:
