@@ -46,3 +46,17 @@ See `docs` for the full report.
 - **3.0_visitor_forecasting_precovid.ipynb**: Notebook for experiment involving only precovid data (for hyperparameter tuning and sanity check)
 - **3.0a_visitor_forecasting_precovid_ablation.ipynb**: Notebook for ablation study of encoding methods for temporal feature
 - **3.1_visitor_forecasting_covid**: Notebook for experiment involving training data up to 2022 and using 2022 as testing period. Also contains code to produce the final required forecast.
+
+## Citation
+If you find this work useful for your research, please cite our work as
+```bibtex
+@article{TAN2026104099,
+  title = {Post-pandemic tourism forecasting with ensemble RNN},
+  journal = {Annals of Tourism Research},
+  volume = {116},
+  pages = {104099},
+  year = {2026},
+  doi = {https://doi.org/10.1016/j.annals.2025.104099},
+  author = {Zhi Qin Tan and Yunpeng Li},
+}
+```
